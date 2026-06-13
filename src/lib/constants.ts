@@ -8,8 +8,8 @@ export const API_ROUTES = {
 } as const
 
 export const LOCAL_STORAGE_KEYS = {
-  API_KEY: 'resumeiq_api_key',
-  PROVIDER: 'resumeiq_provider',
+  API_KEY: 'cvpulse_api_key',
+  PROVIDER: 'cvpulse_provider',
 } as const
 
 export const ENV = {
@@ -90,7 +90,7 @@ export const ANIMATION_DURATIONS = {
   PAGE_ENTER: 300,
 } as const
 
-export const APP_NAME = 'ResumeIQ' as const
+export const APP_NAME = 'CVPulse' as const
 export const APP_TAGLINE = "Know exactly why you're not getting interviews." as const
 export const APP_DESCRIPTION = 'Paste a job description, upload your CV — get a match score, missing keywords, and actionable rewrites in seconds.' as const
 export const AUTHOR_URL = 'https://nabilamhaouch.dev' as const

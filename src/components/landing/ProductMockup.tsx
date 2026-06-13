@@ -48,7 +48,7 @@ export function ProductMockup() {
           </div>
           <div className="flex-1 flex justify-center">
             <span className="px-4 py-1 rounded-md bg-bg-card text-[11px] font-mono text-text-muted border border-border">
-              resumeiq.app/analyze
+              cvpulse.app/analyze
             </span>
           </div>
           <Sparkles className="w-3.5 h-3.5 text-accent-blue" />

@@ -14,7 +14,7 @@ interface TestimonialItem {
 const TESTIMONIALS: TestimonialItem[] = [
   {
     quote:
-      'I applied to 40 jobs with zero callbacks. ResumeIQ showed me I was missing 9 of the 12 keywords every posting asked for. Three interviews the following week.',
+      'I applied to 40 jobs with zero callbacks. CVPulse showed me I was missing 9 of the 12 keywords every posting asked for. Three interviews the following week.',
     name: 'Sarah C.',
     role: 'Frontend Developer',
     initials: 'SC',

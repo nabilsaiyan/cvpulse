@@ -4,7 +4,7 @@ import { cn } from '@/lib/utils'
 interface LogoProps {
   /** Mark size in px */
   size?: number
-  /** Render the "ResumeIQ" wordmark next to the mark */
+  /** Render the "CVPulse" wordmark next to the mark */
   withWordmark?: boolean
   className?: string
 }
@@ -44,8 +44,8 @@ export function Logo({ size = 26, withWordmark = true, className }: LogoProps) {
       </svg>
       {withWordmark && (
         <span className="font-mono text-sm font-bold text-text-primary leading-none">
-          {APP_NAME.slice(0, 6)}
-          <span className="gradient-text">{APP_NAME.slice(6)}</span>
+          {APP_NAME.slice(0, 2)}
+          <span className="gradient-text">{APP_NAME.slice(2)}</span>
         </span>
       )}
     </span>

@@ -1,13 +1,13 @@
 <div align="center">
 
-# ResumeIQ
+# CVPulse
 
 **AI-powered CV analyzer — know exactly why you're not getting interviews.**
 
 Paste a job description, upload your CV, and get an ATS score, keyword gap analysis,
 section-by-section feedback, and actionable rewrites — streamed in real time.
 
-[Live Demo](https://resumeiq.vercel.app) · [Report Bug](https://github.com/nabilsaiyan/resumeiq/issues)
+[Live Demo](https://cvpulse.vercel.app) · [Report Bug](https://github.com/nabilsaiyan/cvpulse/issues)
 
 ![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-strict-blue?logo=typescript)
@@ -66,8 +66,8 @@ src/
 ## Getting Started
 
 ```bash
-git clone https://github.com/nabilsaiyan/resumeiq.git
-cd resumeiq
+git clone https://github.com/nabilsaiyan/cvpulse.git
+cd cvpulse
 npm install
 cp .env.example .env.local   # add your key(s)
 npm run dev

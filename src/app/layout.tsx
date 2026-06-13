@@ -17,7 +17,7 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://resumeiq.vercel.app'),
+  metadataBase: new URL('https://cvpulse.vercel.app'),
   title: {
     default: `${APP_NAME} — Know exactly why you're not getting interviews`,
     template: `%s | ${APP_NAME}`,
