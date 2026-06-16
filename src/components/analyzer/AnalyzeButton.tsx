@@ -3,7 +3,7 @@
 import { Loader2, Sparkles } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { useStore } from '@/store/useStore'
-import { VALIDATION } from '@/lib/constants'
+import { AI_PROVIDERS, DEFAULT_PROVIDER, VALIDATION } from '@/lib/constants'
 import { cn } from '@/lib/utils'
 
 interface AnalyzeButtonProps {
@@ -12,7 +12,7 @@ interface AnalyzeButtonProps {
 }
 
 export function AnalyzeButton({ onAnalyze, className }: AnalyzeButtonProps) {
-  const { status, jobDescription, cvText } = useStore()
+  const { status, jobDescription, cvText, provider } = useStore()
 
   const isAnalyzing = status === 'analyzing'
   const isExtracting = status === 'extracting'
@@ -22,10 +22,12 @@ export function AnalyzeButton({ onAnalyze, className }: AnalyzeButtonProps) {
     jobDescription.length >= VALIDATION.JOB_DESCRIPTION_MIN &&
     cvText.length >= VALIDATION.CV_TEXT_MIN
 
+  const activeProvider = AI_PROVIDERS[provider ?? DEFAULT_PROVIDER]
+
   const label = isExtracting
     ? 'Extracting PDF…'
     : isAnalyzing
-    ? 'Analyzing with Claude…'
+    ? `Analyzing with ${activeProvider.label}…`
     : 'Analyze CV →'
 
   return (
